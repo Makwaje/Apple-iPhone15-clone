@@ -13,8 +13,6 @@ import { useGLTF, useTexture } from "@react-three/drei";
 
 function IPhone(props: any) {
   const { nodes, materials }: any = useGLTF("/models/scene.glb");
-  console.log(nodes, materials);
-  console.log(props.item.img);
   const texture = useTexture(props.item.img.src) as THREE.Texture;
   useEffect(() => {
     Object.entries(materials).map((material: any) => {

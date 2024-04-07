@@ -137,7 +137,7 @@ function VideoCarousel() {
         gsap.ticker.remove(animUpdate);
       }
     }
-  }, [videoId, startPlay]);
+  }, [videoId, startPlay, isPlaying]);
 
   function handleProcess(type: String, i: number) {
     switch (type) {

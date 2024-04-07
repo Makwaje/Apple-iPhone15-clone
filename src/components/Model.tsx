@@ -62,7 +62,7 @@ function Model() {
         },
       );
     }
-  }, [size]);
+  }, [size, timeline, large, largeRotation, smallRotation]);
 
   useGSAP(function () {
     gsap.to("#heading", {
@@ -82,6 +82,7 @@ function Model() {
         ),
     });
   }, []);
+
   return (
     <section className="common-padding" id="3d">
       <div className="w-full">
@@ -124,7 +125,7 @@ function Model() {
               }}
               // style={{ width: "100vw", height: "100vh" }}
               resize={{ debounce: 0 }}
-              eventSource={document.getElementById("root")!}
+              eventSource={document.getElementById("root")! || undefined!}
             >
               <View.Port />
             </Canvas>

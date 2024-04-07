@@ -109,7 +109,8 @@ function Features() {
                     <span className="text-white ">
                       lightest Pro models ever.{" "}
                     </span>
-                    you'll notice the difference the moment you pice one up.{" "}
+                    you&apos;ll notice the difference the moment you pice one
+                    up.{" "}
                   </p>
                 </div>
               </div>
